@@ -103,9 +103,6 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav text-center">
       <li class="nav-item">
-          <a class="nav-link" target="_blank" href="https://www.notion.so/2021-Technica-Organizer-FAQs-ecde231cc76a424fa7220d97dc398b00">Organizer FAQs</a>
-      </li>
-      <li class="nav-item">
         <a class="nav-link" target="_blank" href="./files/2020AnnualReport.pdf">2020 Annual Report</a>
       </li>
       <!--
@@ -146,12 +143,12 @@
                 <div class="small-spark pink-spark" style="top: 250px; right: -125px;"></div>
                 <div class="med-spark blue-spark" style="top: 375px; right: -80px;"></div>
               </div>
-              We're hiring &#8212; Come build a <br><span style="color: #A88AA8;">more diverse and inclusive</span> <br>technology industry with us
+              We're hiring &#8212; Come build a <br><span style="color: #A88AA8;">more diverse and inclusive</span> <br>technology industry with us!
             </span>
           </h1>
           <button id="apply-btn"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSevXYt9ZMx17hCiBt7qOLsH_7XzCbiG-0fBH-xm0cecMrPaPw/viewform?usp=send_form" style="color: white; text-decoration: none;">Apply</a></button>
           <h1>Thanks for Technica 2020!</h1>
-          <h1 style="color: #A88AA8;">Stay tuned for this year</h1>
+          <h1 style="color: #A88AA8;">Stay tuned for this year.</h1>
         </div>
         <form class="form-inline justify-content-center" id="email-form-wrapper">
           <div class="email-form" id="email-form">
@@ -182,6 +179,57 @@
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+      
+    <section class="faq section">
+      <div class="container faq-container" id="faq">
+          <div class="heading">
+            <h2>2021 Organizer Application FAQ</h2>
+          </div>
+          <div class="row">
+            <div class="col-md">
+                <div class="accordion">
+                    <h4>What is a "hackathon"?</h4>
+                    <h4>+</h4>
+                </div>
+                <div class="panel">
+                    <p>A hackathon is a technology-focused event where individuals and teams work on new projects in a short period of time. You can build anything you want. An app, a robot, a website. The only limit is your imagination! Technica is the world's largest hackathon for all-women and non-binary people.</p>
+                </div>
+                <div class="accordion">
+                    <h4>Will Technica 2021 be in-person, online, or hybrid?</h4>
+                    <h4>+</h4>
+                </div>
+                <div class="panel">
+                    <p>Although we're waiting to see the efficacy of the vaccine rollout before making a final decision, our current plan is to host an unprecedented <b>hybrid</b> model of a hackathon in 2021. This involves both in-person (regional meetups, socializing, food, etc.) and virtual components (workshops, tech talks). Organizer bonding and organizer meetings will very likely be <b>in-person</b> in the fall and potentially summer.</p>
+                </div>
+                <div class="accordion">
+                    <h4>Who is eligible to apply?</h4>
+                    <h4>+</h4>
+                </div>
+                <div class="panel">
+                    <p>University of Maryland, College Park students of all majors and backgrounds are encouraged to apply! You don't need to be a CS major or have a technical background to help; we have teams whose work involves fields like design, event planning, psychology, accounting, and others.</p>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="accordion">
+                    <h4>Why make an all-women and non-binary hackathon?</h4>
+                    <h4>+</h4>
+                </div>
+                <div class="panel">
+                    <p><b>Women, non-binary, and gender non-conforming people</b> are underrepresented in the tech world, and it’s up to everyone to change that! Technica’s goal is to create a welcoming environment where people from underrepresented genders can build cool projects and share their stories!
+                    <br><br>
+                    For the past 6 years, we have gathered thousands of individuals from underrepresented backgrounds in tech for a weekend of learning, building, and connection. <b>We believe that the best way to bridge the gender divide in tech is by getting the next generation of female and nonbinary engineers excited about building and creating.</b></p>
+                </div>
+                <div class="accordion">
+                    <h4>What is the application process like?</h4>
+                    <h4>+</h4>
+                </div>
+                <div class="panel">
+                    <p>The <a href="https://docs.google.com/forms/d/e/1FAIpQLSevXYt9ZMx17hCiBt7qOLsH_7XzCbiG-0fBH-xm0cecMrPaPw/viewform?usp=send_form" target="_blank" style="color: #A88AA8; text-decoration: none;"><b>application</b></a> is open now until April 5 at 11:59PM EST. After the directing team reviews the applications, interviews for specific teams will take place until April 15. You will receive your decision on April 16!</p>
+                </div>
+            </div>
+          </div>
       </div>
     </section>
 
@@ -252,4 +300,21 @@
 <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-white.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a></body>
 
 <script src="./js/landing-submit.js"></script>
+    
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            }
+        });
+      }
+    </script>
 </html>
