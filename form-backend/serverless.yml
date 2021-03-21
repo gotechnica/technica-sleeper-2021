@@ -1,0 +1,21 @@
+service: sponsorship-backend
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+
+functions:
+  process-landing-pg-emails:
+    handler: handler.process_emails
+    events:
+      - http:
+          path: process_emails
+          method: post
+          cors: true
+  index:
+    handler: handler.index
+    events:
+      - http:
+          path: index
+          method: post
+          cors: true
