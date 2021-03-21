@@ -5,7 +5,7 @@ body {
   height: 100%
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: bold;
 }
 
@@ -74,20 +74,25 @@ h1, h2 {
 }
 
 .btn:hover {
-  filter: brightness(.9);
+  opacity: 0.9;
   transition: .3s ease;
 }
 
 #apply-btn {
-    font-weight: bold;
-    font-size: 135%;
-    height: 40px;
-    width: 115px;
-    background-color: #A88AA8;
-    border: none;
-    margin: 25px;
-    padding: 7px;
-    padding-bottom: 3%;
+  font-weight: bold;
+  font-size: 135%;
+  height: 40px;
+  width: 115px;
+  background-color: #A88AA8;
+  border: none;
+  margin: 25px;
+  padding: 7px;
+  padding-bottom: 3%;
+}
+
+#apply-btn:hover {
+  opacity: 0.9;
+  transition: .3s ease;
 }
 
 .social {
@@ -317,46 +322,6 @@ h1, h2 {
     border-color: #A88AA8;
 }
 
-.faq-toggle-icon { //https://jsfiddle.net/psullivan6/0eL3jezk/
-    position: relative;
-    width: 10px;
-    height: 10px;
-    margin-top: 8px;
-
-    &:before,
-    &:after{
-        content: "";
-        position: absolute;
-        background-color: black;
-        transition: transform 0.25s ease-out;
-    }
-
-    /* Vertical line */
-    &:before{
-        top: 0;
-        left: 50%;
-        width: 2px;
-        height: 100%;
-        margin-left: -1px;
-    }
-
-    /* horizontal line */
-    &:after{
-        top: 50%;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        margin-top: -1px;
-    }
-}
-
-.accordion-active {
-  .faq-toggle-icon {
-      &:before{ transform: rotate(90deg);}
-      &:after{ transform: rotate(180deg);}
-  }
-}
-
 .panel {
     max-height: 0;
     overflow: hidden;
@@ -369,12 +334,16 @@ h1, h2 {
 @media (max-width: 575px) {
   .faq {
     padding-left: 3%;
-    padding-right: 3%; } }
+    padding-right: 3%;
+  }
+}
 
 .faq-container {
   background-color: white;
   padding: 3%;
-  border-radius: 8px; }
+  border-radius: 8px;
+  width: 75%;
+}
 
 .accordion {
   display: flex;
@@ -392,37 +361,6 @@ h1, h2 {
 .accordion:hover, .accordion-active {
   border-color: #A88AA8; }
 
-.faq-toggle-icon {
-  position: relative;
-  width: 10px;
-  height: 10px;
-  margin-top: 8px;
-  /* Vertical line */
-  /* horizontal line */ }
-  .faq-toggle-icon:before, .faq-toggle-icon:after {
-    content: "";
-    position: absolute;
-    background-color: black;
-    transition: transform 0.25s ease-out; }
-  .faq-toggle-icon:before {
-    top: 0;
-    left: 50%;
-    width: 2px;
-    height: 100%;
-    margin-left: -1px; }
-  .faq-toggle-icon:after {
-    top: 50%;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    margin-top: -1px; }
-
-.accordion-active .faq-toggle-icon:before {
-  transform: rotate(90deg); }
-
-.accordion-active .faq-toggle-icon:after {
-  transform: rotate(180deg); }
-
 .panel {
   max-height: 0;
   overflow: hidden;
@@ -430,3 +368,8 @@ h1, h2 {
   @media (max-width: 575px) {
     .panel {
       font-size: 1rem; } }
+
+a:hover {
+  opacity: 0.75;
+  transition: .3s ease;
+}
