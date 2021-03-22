@@ -87,7 +87,13 @@ h1, h2, h3 {
   border: none;
   margin: 25px;
   padding: 7px;
-  padding-bottom: 3%;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 1200px) {}
+  #apply-btn {
+      padding-bottom: 40px;
+  }
 }
 
 #apply-btn:hover {
@@ -268,6 +274,10 @@ h1, h2, h3 {
   .footer {
     font-size: .70rem;
   }
+
+  #apply-btn {
+    padding-bottom: 9%;
+  }
 }
 
 @media only screen and (max-height: 700px) {
@@ -344,13 +354,6 @@ h1, h2, h3 {
   border-radius: 8px;
   width: 75%;
 }
-
-@media only screen and (max-width: 575px) {
-  .faq-container {
-     width: 100%;
-    }
-}
-
 .accordion {
   display: flex;
   justify-content: space-between;
@@ -381,9 +384,9 @@ h1, h2, h3 {
   .panel {
       font-size: 1rem; 
    }
-    .faq-container {
-        100%;
-    }
+  .faq-container {
+     width: 100%;
+   }
 }
 
 a:hover {
