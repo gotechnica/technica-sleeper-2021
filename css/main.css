@@ -345,6 +345,12 @@ h1, h2, h3 {
   width: 75%;
 }
 
+@media only screen and (max-width: 575px) {
+  .faq-container {
+     width: 100%;
+    }
+}
+
 .accordion {
   display: flex;
   justify-content: space-between;
@@ -354,20 +360,31 @@ h1, h2, h3 {
   margin-bottom: 2%;
   border-bottom: 3px solid white;
   transition: ease all 0.3s;
-  cursor: pointer; }
-  .accordion h4 {
-    max-width: 95%; }
+  cursor: pointer;
+}
+
+.accordion h4 {
+  max-width: 95%;
+}
 
 .accordion:hover, .accordion-active {
-  border-color: #A88AA8; }
+  border-color: #A88AA8;
+}
 
 .panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.1s ease-out; }
-  @media (max-width: 575px) {
-    .panel {
-      font-size: 1rem; } }
+  transition: max-height 0.1s ease-out; 
+}
+
+@media (max-width: 575px) {
+  .panel {
+      font-size: 1rem; 
+   }
+    .faq-container {
+        100%;
+    }
+}
 
 a:hover {
   opacity: 0.75;
