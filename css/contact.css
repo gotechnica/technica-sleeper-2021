@@ -1,0 +1,59 @@
+.info-input {
+  padding: 10px;
+  background-color: #FF6B98;
+}
+
+.inquiry-box {
+  border: 3px solid #FF6B98;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+}
+
+.inquiry-btn {
+  border-radius: 0;
+  background-color: #FF6B98;
+}
+
+.inquiry-btn:hover {
+  filter: brightness(1.2);
+  transition: .3s ease;
+}
+
+.contact-footer {
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 1370px) {
+  .main {
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+}
+
+/* large breakpoint, switch to mobile-layout */
+@media only screen and (max-width: 991px) {
+  .main {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .heading {
+    text-align: center;
+  }
+}
+
+/* mobile */
+@media only screen and (max-width: 575px) {
+  .main {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+}
